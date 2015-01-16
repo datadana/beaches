@@ -1,0 +1,47 @@
+id,beach,displayer,county,injuries,detail,x,y
+1,Makena,Makena: 22,Maui,22,22 total: 2013(6); 2012(5); 2011(6); 2010(3); 2009(2),-156.448669,20.36225
+2,Hapuna,Hapuna: 18,Hawaii,18,18 total: 2013(4); 2012(3); 2011(2); 2010(4); 2009(5),-155.825544,19.990641
+3,Sandy,Sandy: 16,Honolulu,16,16 total: 2013(5); 2012(3); 2011(4); 2010(2); 2009(2),-157.673282,21.285604
+4,Brenneke,Brenneke: 15,Kauai,15,15 total: 2013(1); 2012(5); 2011(3); 2010(6); 2009(0),-159.451215,21.87306
+5,Laaloa,Laaloa: 12,Hawaii,12,12 total: 2013(4); 2012(2); 2011(2); 2010(3); 2009(1),-155.974741,19.597892
+6,Waikiki,Waikiki: 10,Honolulu,10,10 total: 2013(4); 2012(3); 2011(1); 2010(2); 2009(0),-157.830349,21.27666
+7,Waimea,Waimea: 8,Honolulu,8,Eight total: 2013(3); 2012(1); 2011(1); 2010(1); 2009(2),-158.064343,21.639514
+8,Kua Bay,Kua Bay: 7,Hawaii,7,Seven total: 2013(0); 2012(2); 2011(1); 2010(3); 2009(1),-156.006651,19.810363
+9,Wailea,Wailea: 7,Maui,7,Seven total: 2013(5); 2012(0); 2011(1); 2010(1); 2009(0),-156.44332,20.68265
+10,Kaanapali,Kaanapali: 6,Maui,6,Six total: 2013(1); 2012(2); 2011(1); 2010(2); 2009(0),-156.693252,20.934043
+11,Mauna Kea,Mauna Kea: 5,Hawaii,5,Five total: 2013(3); 2012(2); 2011(0); 2010(0); 2009(0),-155.824892,20.004649
+12,Polo Beach,Polo Beach: 5,Maui,5,Five total: 2013(2); 2012(1); 2011(0); 2010(0); 2009(2),-156.443681,20.674772
+13,Kamaole,Kamaole: 4,Maui,4,"Four spinal injuries reported, 2009-2013",-156.446151,20.712818
+14,Bellows,Bellows: 3,Honolulu,3,"Three spinal injuries reported, 2009-2013",-157.709028,21.35743
+15,Hamoa,Hamoa: 3,Maui,3,"Three spinal injuries reported, 2009-2013",-155.9942,20.77
+16,Ulua,Ulua: 3,Maui,3,"Three spinal injuries reported, 2009-2013",-156.443604,20.680379
+17,Waimanalo,Waimanalo: 3,Honolulu,3,"Three spinal injuries reported, 2009-2013",-157.698262,21.33438
+18,Fleming,Fleming: 2,Maui,2,"Two spinal injuries reported, 2009-2013",-156.651095,21.005004
+19,Hanalei,Hanalei: 2,Kauai,2,"Two spinal injuries reported, 2009-2013",-159.501834,22.205211
+20,Hulopoe,Hulopoe: 2,Maui,2,"Two spinal injuries reported, 2009-2013",-156.89264,20.73844
+21,Kailua,Kailua: 2,Honolulu,2,"Two spinal injuries reported, 2009-2013",-157.727045,21.397614
+22,Kalama,Kalama: 2,Honolulu,2,"Two spinal injuries reported, 2009-2013",-157.741637,21.409444
+23,Laie,Laie: 2,Honolulu,2,"Two spinal injuries reported, 2009-2013",-157.921225,21.631363
+24,Makapuu,Makapuu: 2,Honolulu,2,"Two spinal injuries reported, 2009-2013",-157.662377,21.314688
+25,Napili,Napili: 2,Maui,2,"Two spinal injuries reported, 2009-2013",-156.665559,20.997274
+26,Poipu,Poipu: 2,Kauai,2,"Two spinal injuries reported, 2009-2013",-159.454217,21.873399
+27,Shipwreck,Shipwreck: 2,Kauai,2,"Two spinal injuries reported, 2009-2013",-159.436756,21.874973
+28,South Point,South Point: 2,Hawaii,2,"Two spinal injuries reported, 2009-2013",-155.673414,18.9125
+29,Ala Moana,Ala Moana: 1,Honolulu,1,One spinal injury reported 2009-2013,-157.847882,21.289744
+30,Black Point,Black Point: 1,Honolulu,1,One spinal injury reported 2009-2013,-157.798832,21.268443
+31,Charley Young,Charley Young: 1,Maui,1,One spinal injury reported 2009-2013,-156.449062,20.72457
+32,Diamond Head,Diamond Head: 1,Honolulu,1,One spinal injury reported 2009-2013,-157.806888,21.255275
+33,Haleiwa,Haleiwa: 1,Honolulu,1,One spinal injury reported 2009-2013,-158.10565,21.588104
+34,Honolulu harbor,Honolulu harbor: 1,Honolulu,1,One spinal injury reported 2009-2013,-157.872561,21.309131
+35,Hookena,Hookena: 1,Hawaii,1,One spinal injury reported 2009-2013,-155.897498,19.379865
+36,Kaanapali,Kaanapali: 1,Maui,1,One spinal injury reported 2009-2013,-156.693492,20.932391
+37,Kahaluu,Kahaluu: 1,Hawaii,1,One spinal injury reported 2009-2013,-155.967733,19.578905
+38,Kalapaki,Kalapaki: 1,Kauai,1,One spinal injury reported 2009-2013,-159.350207,21.960561
+39,Ke Ike,Ke Ike: 1,Honolulu,1,One spinal injury reported 2009-2013,-158.059603,21.655445
+40,Kealia,Kealia: 1,Kauai,1,One spinal injury reported 2009-2013,-159.305561,22.097543
+41,Keawakapu,Keawakapu: 2,Maui,2,"Two spinal injuries reported, 2009-2013",-156.446288,20.704203
+43,Kekaha,Kekaha: 1,Honolulu,1,One spinal injury reported 2009-2013,-159.726818,21.970645
+44,Lanikai,Lanikai: 1,Honolulu,1,One spinal injury reported 2009-2013,-157.715458,21.393101
+45,"Sugar Beach, Kihei","Sugar Beach, Kihei: 1",Maui,1,One spinal injury reported 2009-2013,-156.467162,20.783627
+46,White Plains,White Plains: 1,Honolulu,1,One spinal injury reported 2009-2013,-158.045244,21.303604
+47,unspecified,unspecified: 19,,19,"19 total: 2013(4), 2012(5),2011(3),2010(3),2009(4)",-157.563896,21.305495
