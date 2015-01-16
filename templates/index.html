@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="en">
+    <head>
+	<title>Spinal cord injuries on Hawaii beaches, 2009-2013</title>
+        <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.7.2/leaflet.css" />
+        <script type="text/javascript" src="http://cdn.leafletjs.com/leaflet-0.7.2/leaflet.js?2"></script>
+		<!--Load the AJAX API-->
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type="text/javascript">
+
+      // Load the Visualization API and the piechart package.
+      google.load('visualization', '1.0', {'packages':['corechart']});
+
+      // Set a callback to run when the Google Visualization API is loaded.
+      google.setOnLoadCallback(drawChart);
+
+      // Callback that creates and populates a data table,
+      // instantiates the pie chart, passes in the data and
+      // draws it.
+      function drawChart() {
+
+        // Create the data table.
+        var data = new google.visualization.DataTable();
+        data.addColumn('string', 'Year');
+        data.addColumn('number', 'Injuries');
+        data.addRows([
+          ['2013', 52],
+          ['2012', 52],
+          ['2011', 33],
+          ['2010', 43],
+          ['2009', 26]
+        ]);
+
+        // Set chart options
+        var options = {'title':'Spinal injuries by year',
+                       'width':660,
+                       'height':300};
+
+        // Instantiate and draw our chart, passing in some options.
+        var chart = new google.visualization.BarChart(document.getElementById('chart_div'));
+        chart.draw(data, options);
+      }
+    </script>
+	<style type="text/css">
+  .centeredImage
+    {
+    text-align:center;
+    margin-top:0px;
+    margin-bottom:0px;
+    padding:0px;
+    }
+	<!--[if !IE 7]>
+	<style type="text/css">
+		#wrap {display:table;height:100%}
+	</style>
+<![endif]-->
+	</style>
+    </head>
+    <body>
+	<p class="centeredImage"><img src="http://datadana.com/hawaii/shelters/images/hsa_logo.jpg"></p><br>
+        <div id="map" style="width:660px; height:420px;"></div>
+        <h1>Spinal cord injuries on Hawaii beaches, 2009-2013</h1>
+		<div id="chart_div"></div>
+
+        <table border=1 cellpadding=7>
+            <tr>
+                <th>Beach</th>
+                <th>County</th>
+                <th>Details</th>
+                
+            </tr>
+        {% for obj in object_list %}
+            <tr>
+                <td>{{ obj.beach }}</a></td>
+                <td>{{ obj.county }}</td>
+                <td>{{ obj.detail }}</td>
+
+            </tr>
+        {% endfor %}
+        </table><br>
+		
+				SOURCE: Hawaii Department of Health<br>
+		CREDIT: Dana Williams/Star-Advertiser<br>
+        <script type="text/javascript">
+            var map = L.map('map').setView([21.528030, -157.896123], 7);
+            var mapquestLayer = new L.TileLayer('http://{s}.mqcdn.com/tiles/1.0.0/map/{z}/{x}/{y}.png', {
+                maxZoom: 18,
+                attribution: 'Data, imagery and map information provided by <a href="http://open.mapquest.co.uk" target="_blank">MapQuest</a>,<a href="http://www.openstreetmap.org/" target="_blank">OpenStreetMap</a> and contributors.',
+                subdomains: ['otile1','otile2','otile3','otile4']
+            });
+            map.addLayer(mapquestLayer);
+            var data = {
+              "type": "FeatureCollection",
+              "features": [
+                {% for obj in object_list %}
+                {
+                  "type": "Feature",
+                  "properties": {
+                    "displayer": "{{ obj.displayer }}",
+                    "id": "{{ obj.id }}"
+                  },
+                  "geometry": {
+                    "type": "Point",
+                    "coordinates": [{{ obj.x }}, {{ obj.y }}]
+                  }
+                }{% if not loop.last %},{% endif %}
+                {% endfor %}
+              ]
+            };
+                        var dataLayer = L.geoJson(data, {
+                onEachFeature: function(feature, layer) {
+                    layer.bindPopup(feature.properties.displayer);
+                }
+            });  
+			map.addLayer(dataLayer);
+        </script>
+    </body>
+</html>
